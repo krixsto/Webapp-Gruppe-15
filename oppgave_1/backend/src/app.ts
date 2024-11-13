@@ -5,6 +5,14 @@ const app = new Hono();
 
 app.use("/*", cors());
 
+app.get(() => {});
+
+app.options(() => {});
+
+app.post(() => {});
+
+app.delete(() => {});
+
 app.onError((err, c) => {
   console.error(err);
 
